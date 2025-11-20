@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "🚀 Deploying Droppers Application..."
+echo "🚀 Deploying Landing Page..."
 
 # Pull latest images (if using registry)
 # docker-compose pull

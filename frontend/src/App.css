@@ -1,0 +1,40 @@
+/* AI Elements Animations */
+.neuron {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background-color: white;
+  border-radius: 50%;
+  animation: neuronPulse 3s infinite;
+}
+
+.connection {
+  position: absolute;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, white, transparent);
+  transform-origin: left center;
+  animation: connectionFlow 5s infinite linear;
+}
+
+@keyframes neuronPulse {
+  0%, 100% { 
+    opacity: 0.2; 
+    transform: scale(1); 
+  }
+  50% { 
+    opacity: 1; 
+    transform: scale(1.5); 
+  }
+}
+
+@keyframes connectionFlow {
+  0% { 
+    opacity: 0; 
+  }
+  50% { 
+    opacity: 1; 
+  }
+  100% { 
+    opacity: 0; 
+  }
+}

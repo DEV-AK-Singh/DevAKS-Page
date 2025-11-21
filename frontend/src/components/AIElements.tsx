@@ -51,7 +51,7 @@ const AIElements: React.FC = () => {
     createElements();
   }, []);
 
-  return <div id="ai-elements" className="fixed inset-0 pointer-events-none z-0" />;
+  return <div id="ai-elements" className="fixed inset-0 pointer-events-none z-0 opacity-50" />;
 };
 
 export default AIElements;

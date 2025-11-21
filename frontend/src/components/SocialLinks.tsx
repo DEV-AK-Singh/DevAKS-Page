@@ -21,7 +21,7 @@ const SocialLinks: React.FC = () => {
     {
       icon: <FileText className="w-5 h-5" />,
       label: 'Resume',
-      url: 'https://drive.google.com/file/d/1m4FYR4lpYul9S4SyaG98pxfADAPRlMr1',
+      url: 'https://drive.google.com/file/d/17k5UH6F0DmDFHtZvMcCpv2qeydzW9a91/view?usp=sharing',
     },
   ];
 

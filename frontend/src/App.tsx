@@ -6,6 +6,7 @@ import Projects from './components/Projects.tsx';
 import SocialLinks from './components/SocialLinks.tsx';
 import Footer from './components/Footer.tsx';
 import AIElements from './components/AIElements.tsx';
+import DevAksLogo from './components/DevAksLogo.tsx';
 import './App.css';
 
 const App: React.FC = () => {
@@ -18,6 +19,7 @@ const App: React.FC = () => {
         <Skills />
         <Projects />
         <SocialLinks />
+        <DevAksLogo />
         <Footer />
       </div>
     </div>

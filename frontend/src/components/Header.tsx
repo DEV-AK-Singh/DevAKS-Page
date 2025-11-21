@@ -12,12 +12,12 @@ const Header: React.FC = () => {
   ];
 
   return (
-    <header className="py-8 flex justify-between items-center relative z-10">
+    <header className="py-8 flex justify-between items-center relative font-mono">
       <div className="logo">
-        <span className="text-2xl font-light tracking-widest uppercase relative">
-          DEV-AK
+        <span className="text-2xl font-light tracking-widest relative">
+          <p className='font-mono'>devaks</p>
           <span className="text-gray-500 text-sm absolute -bottom-1 -right-12 tracking-normal">
-            .space
+            <p className='font-mono'>.space</p>
           </span>
         </span>
       </div>
@@ -36,7 +36,7 @@ const Header: React.FC = () => {
             : 'hidden md:flex'
         } md:flex md:static md:bg-transparent md:border-0 md:p-0`}
       >
-        <ul className="flex flex-col md:flex-row gap-6 md:gap-8">
+        <ul className="flex flex-col bg-black pb-8 md:bg-transparent z-50 md:flex-row gap-6 md:gap-8">
           {navItems.map((item) => (
             <li key={item.href}>
               <a

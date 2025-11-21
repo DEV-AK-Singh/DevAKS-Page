@@ -40,6 +40,28 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
             {project.category}
           </span>
         </div>
+
+        {/* Github and Web Links */}
+        <div className="absolute top-4 right-4">
+          <a
+            href={project.repoUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex px-3 py-1 bg-black/80 text-xs rounded-full border border-gray-600 hover:border-white transition-colors"
+          >
+            <Github size={16} />
+          </a>
+          {project.liveUrl && (
+            <a
+              href={project.liveUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex px-3 py-1 bg-black/80 text-xs rounded-full border border-gray-600 hover:border-white transition-colors ml-2"
+            >
+              <ExternalLink size={16} />
+            </a>
+          )}
+        </div>
       </div>
 
       {/* Project Content */}
@@ -53,32 +75,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         <TechStackIcons 
           technologies={project.technologies} 
           className="mb-4"
-        />
-
-        {/* Project Links */}
-        <div className="grid grid-cols-2 gap-4 border-t border-gray-700 pt-4">
-          <a
-            href={project.repoUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 px-4 py-2 border border-gray-600 hover:border-white transition-colors text-sm"
-          >
-            <Github size={16} />
-            Github Repo
-          </a>
-          
-          {project.liveUrl && (
-            <a
-              href={project.liveUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 px-4 py-2 border border-gray-600 hover:border-white transition-colors text-sm"
-            >
-              <ExternalLink size={16} />
-              Live Demo
-            </a>
-          )}
-        </div>
+        /> 
       </div>
     </div>
   );

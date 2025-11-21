@@ -26,8 +26,8 @@ const SocialLinks: React.FC = () => {
   ];
 
   return (
-    <section id="contact" className="py-20 relative z-10">
-      <div className="flex flex-col md:flex-row justify-center gap-6 md:gap-8">
+    <section id="contact" className="py-20 relative z-10 font-mono">
+      <div className="grid grid-cols-2 md:grid-cols-4 justify-center gap-6 md:gap-8">
         {socialLinks.map((link, index) => (
           <a
             key={index}

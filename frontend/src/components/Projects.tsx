@@ -39,7 +39,7 @@ const Projects: React.FC = () => {
   ];
 
   return (
-    <section id="projects" className="py-20 relative z-10">
+    <section id="projects" className="py-20 relative z-10 font-mono">
       <div className="text-center mb-16">
         <h2 className="text-3xl font-light tracking-wide mb-4">Featured Projects</h2>
         <p className="text-gray-400 max-w-2xl mx-auto">

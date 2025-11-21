@@ -164,7 +164,7 @@ export default function DevAksLogo(): React.ReactElement {
             >
               <div className="absolute inset-0.5 bg-black rounded-full" />
               <div
-                className="relative z-10 text-4xl sm:text-5xl md:text-6xl font-bold gradient-white-light flex items-center justify-center mb-1 sm:mb-2"
+                className="relative z-10 text-4xl sm:text-5xl md:text-6xl font-bold flex items-center justify-center mb-1 sm:mb-2 transition-all duration-300"
                 style={{ textShadow: "0 0 30px rgba(255, 255, 255, 0.5)" }}
               >
                 <span className="inline-flex">&lt;🧠&gt;</span>

@@ -15,10 +15,7 @@ const Header: React.FC = () => {
     <header className="py-8 flex justify-between items-center relative font-mono">
       <div className="logo">
         <span className="text-2xl font-light tracking-widest relative">
-          <p className='font-mono'>devaks</p>
-          <span className="text-gray-500 text-sm absolute -bottom-1 -right-12 tracking-normal">
-            <p className='font-mono'>.space</p>
-          </span>
+          <p>Dev<span className='text-gray-400'>aks</span><sub className='text-gray-500 text-sm tracking-normal'>.space</sub></p> 
         </span>
       </div>
 

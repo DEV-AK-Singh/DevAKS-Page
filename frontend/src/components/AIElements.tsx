@@ -3,8 +3,8 @@ import React, { useEffect } from 'react';
 const AIElements: React.FC = () => {
   useEffect(() => {
     const createElements = () => {
-      const neurons = 50;
-      const connections = 10;
+      const neurons = 40;
+      const connections = 5;
       const container = document.getElementById('ai-elements');
       if (!container) return;
 

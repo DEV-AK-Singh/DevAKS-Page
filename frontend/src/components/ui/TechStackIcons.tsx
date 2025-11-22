@@ -50,6 +50,11 @@ const techIcons: Record<string, string> = {
   'github': '🐙',
   'vscode': '💻',
   'figma': '🎨',
+
+  // Others
+  'npm': '📦',
+  'yarn': '📦',
+  'websockets': '🔌'
 };
 
 const TechStackIcons: React.FC<TechStackIconsProps> = ({ technologies, className = '' }) => {

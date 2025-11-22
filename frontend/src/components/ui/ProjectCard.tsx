@@ -21,7 +21,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   return (
     <div className="border border-gray-700 rounded-lg overflow-hidden hover:border-gray-500 transition-all duration-300 bg-gray-900/30">
       {/* Project Image */}
-      <div className="h-64 bg-linear-to-br from-gray-800 to-gray-900 relative overflow-hidden">
+      <div className="h-64 bg-linear-to-br from-gray-800 to-gray-900 relative overflow-hidden border-b border-gray-700">
         {project.imageUrl ? (
           <img
             src={project.imageUrl}

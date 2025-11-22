@@ -44,7 +44,7 @@ const Projects: React.FC = () => {
       description: 'Built complete logistics management platform with Express and React. Developed three Android applications published on Play Store with AWS deployment and Firebase integration for real-time tracking and optimized routing.',
       repoUrl: 'https://github.com/DEV-AK-Singh/Droppers-App',
       liveUrl: 'https://droppers.devaks.space',
-      technologies: ['Typescript', 'Node', 'Express', 'React', 'Android', 'AWS', 'Firebase', 'Real-time Tracking'],
+      technologies: ['Typescript', 'Node', 'Express', 'React', 'Android', 'AWS', 'Firebase', 'WebSockets', 'Real-time Tracking'],
       category: 'Logistics'
     }
   ];

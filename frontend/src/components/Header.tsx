@@ -33,7 +33,7 @@ const Header: React.FC = () => {
             : 'hidden md:flex'
         } md:flex md:static md:bg-transparent md:border-0 md:p-0`}
       >
-        <ul className="flex flex-col bg-black pb-8 md:bg-transparent z-50 md:flex-row gap-6 md:gap-8">
+        <ul className="flex flex-col bg-black pb-8 md:pb-0 md:bg-transparent z-50 md:flex-row gap-6 md:gap-8">
           {navItems.map((item) => (
             <li key={item.href}>
               <a

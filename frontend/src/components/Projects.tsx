@@ -3,28 +3,19 @@ import ProjectCard, { type Project } from './ui/ProjectCard.tsx';
 import emergingEconomicsPreview from '../assets/project_previews/emerging_economics_preview.png';
 import droppersAppPreview from '../assets/project_previews/droppers_app_preview.png'; 
 import dreelAppPreview from '../assets/project_previews/dreel_app_preview.png';
+import playlitAppPreview from '../assets/project_previews/playlit_app_preview.png';
 
 const Projects: React.FC = () => {
   const projects: Project[] = [
     {
-      id: '1',
-      title: 'Emerging Economic Dashboard',
-      imageUrl: emergingEconomicsPreview,
-      description: 'Built economic data visualization dashboard for IIM Ahmedabad using Javascript, React and Node. Integrated World Bank & IMF APIs to deliver insights on emerging economies through interactive charts with Plotly.js.',
-      repoUrl: 'https://github.com/DEV-AK-Singh/Emerging-Economics',
-      liveUrl: 'https://emerging-economics.devaks.space',
-      technologies: ['Python', 'Javascript', 'Express', 'Node', 'React', 'Plotly.js', 'World Bank API', 'IMF API'],
-      category: 'Data Visualization'
-    },
-    {
-      id: '2',
-      title: 'Droppers Logistics Platform',
-      imageUrl: droppersAppPreview,
-      description: 'Built complete logistics management platform with Express and React. Developed three Android applications published on Play Store with AWS deployment and Firebase integration for real-time tracking and optimized routing.',
-      repoUrl: 'https://github.com/DEV-AK-Singh/Droppers-App',
-      liveUrl: 'https://droppers.devaks.space',
-      technologies: ['Typescript', 'Node', 'Express', 'React', 'Android', 'AWS', 'Firebase', 'Real-time Tracking'],
-      category: 'Logistics'
+      id: '4',
+      title: 'Playlit - Cross-Platform Music Sync',
+      imageUrl: playlitAppPreview,
+      description: 'Built a revolutionary music platform that syncs playlists across Spotify and YouTube Music. Features AI-powered song matching, real-time sync, and beautiful user interface with seamless cross-platform integration.',
+      repoUrl: 'https://github.com/DEV-AK-Singh/PlayLit',
+      liveUrl: 'https://playlit.space',
+      technologies: ['React', 'TypeScript', 'Node', 'Express', 'Spotify API', 'YouTube API', 'Tailwind', 'OAuth 2.0'],
+      category: 'Music Tech'
     },
     {
       id: '3',
@@ -35,7 +26,27 @@ const Projects: React.FC = () => {
       liveUrl: 'https://dreel.co',
       technologies: ['Next', 'Python', 'AWS', 'Whisper', 'Deepgram', 'GPT-4', 'Redis', 'FFmpeg'],
       category: 'AI/ML'
-    } 
+    }, 
+    {
+      id: '2',
+      title: 'Emerging Economic Dashboard',
+      imageUrl: emergingEconomicsPreview,
+      description: 'Built economic data visualization dashboard for IIM Ahmedabad using Javascript, React and Node. Integrated World Bank & IMF APIs to deliver insights on emerging economies through interactive charts with Plotly.js.',
+      repoUrl: 'https://github.com/DEV-AK-Singh/Emerging-Economics',
+      liveUrl: 'https://emerging-economics.devaks.space',
+      technologies: ['Python', 'Javascript', 'Node', 'Express', 'React', 'Plotly', 'WorldBank API', 'IMF API'],
+      category: 'Data Visualization'
+    },
+    {
+      id: '1',
+      title: 'Droppers Logistics Platform',
+      imageUrl: droppersAppPreview,
+      description: 'Built complete logistics management platform with Express and React. Developed three Android applications published on Play Store with AWS deployment and Firebase integration for real-time tracking and optimized routing.',
+      repoUrl: 'https://github.com/DEV-AK-Singh/Droppers-App',
+      liveUrl: 'https://droppers.devaks.space',
+      technologies: ['Typescript', 'Node', 'Express', 'React', 'Android', 'AWS', 'Firebase', 'Real-time Tracking'],
+      category: 'Logistics'
+    }
   ];
 
   return (
@@ -47,7 +58,7 @@ const Projects: React.FC = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
         {projects.map((project) => (
           <ProjectCard key={project.id} project={project} />
         ))}
